@@ -8,7 +8,7 @@ def get_file(choice):
     return File_location
 def plot_data():
     import matplotlib.pyplot as plt
-    choice = input("Enter 1 to run saved file or 2 to enter new file:")
+    choice =int(input("Enter 1 to run saved file or 2 to enter new file:"))
     my_file =get_file(choice)
     if my_file != None:
         x_coords =[]
